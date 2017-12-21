@@ -1,3 +1,8 @@
-import uuidv4 from 'uuid/v4'
+import React from 'react'
+import ReactDom from 'react-dom'
 
-document.querySelector('#root').innerHTML = uuidv4()
+const App = () => {
+    return <h1>Hello World!</h1>
+}
+
+ReactDom.render(<App />, document.querySelector('#root'))
